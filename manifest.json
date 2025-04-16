@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Shopee Category Copier",
+    "version": "1.0",
+    "description": "Copy Shopee categories with a single click",
+    "permissions": ["activeTab", "clipboardWrite"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.shopee.co.id/*", "*://*.shopee.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
